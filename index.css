@@ -11,7 +11,7 @@ body{
     margin: 0;
 
 }
-.conteiner {
+.container {
     width: 400px;
     margin-left: auto;
     margin-right: auto;    
@@ -21,6 +21,8 @@ body{
     color:#FFFFFF;
 }
 .input-number{
+    width: 100px;
+    height: 80px;
     font-size: 48pt;
     border:#B295FF;
 }
@@ -28,7 +30,7 @@ body{
     padding: 15px, 10px;
     color: #3D3D3D;
 }
-#opertion{
+#operation{
     background-color: #1F2937;
 }
 h3{
