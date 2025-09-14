@@ -1,13 +1,39 @@
+/* colors
+white : FFFFFF
+box blue : 273549
+h3 : CCC1FF
+bg dark : 1F2937
+bg purple : 6943FF
+xy border : B295FF
+button text : 3D3D3D
+*/
 body{
     margin: 0;
 
 }
-
 .conteiner {
-    background-color: brown;
     width: 400px;
     margin-left: auto;
-    margin-right: auto;
-   
-    
+    margin-right: auto;    
+}
+#input{
+    background-color: #6943FF;
+    color:#FFFFFF;
+}
+.input-number{
+    font-size: 48pt;
+    border:#B295FF;
+}
+.convert-btn{
+    padding: 15px, 10px;
+    color: #3D3D3D;
+}
+#opertion{
+    background-color: #1F2937;
+}
+h3{
+    color: #CCC1FF;
+}
+p{
+    color: #FFFFFF;
 }
