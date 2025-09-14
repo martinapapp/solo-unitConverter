@@ -12,13 +12,19 @@ body{
 
 }
 .container {
-    width: 400px;
-    margin-left: auto;
-    margin-right: auto;    
-}
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}  
 #input{
     background-color: #6943FF;
     color:#FFFFFF;
+    margin: 0 auto;
+}
+#operation{
+    margin: 0 auto;
+    background-color: #1F2937;
+    border: 1px solid #1F2937;
 }
 .input-number{
     width: 100px;
@@ -27,12 +33,9 @@ body{
     border:#B295FF;
 }
 .convert-btn{
-    padding: 15px, 10px;
     color: #3D3D3D;
 }
-#operation{
-    background-color: #1F2937;
-}
+
 h3{
     color: #CCC1FF;
 }
