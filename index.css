@@ -1,0 +1,13 @@
+body{
+    margin: 0;
+
+}
+
+.conteiner {
+    background-color: brown;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+   
+    
+}
