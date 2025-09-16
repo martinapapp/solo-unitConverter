@@ -7,38 +7,112 @@ bg purple : 6943FF
 xy border : B295FF
 button text : 3D3D3D
 */
+@font-face {
+    font-family: "blackRoboto";
+    src: url(fonts/Roboto-Black.ttf);
+}
+@font-face {
+    font-family: "boldRoboto";
+    src: url(fonts/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: "mediumRoboto";
+    src: url(fonts/Roboto-Medium.ttf);
+}
+@font-face {
+    font-family:"lightRoboto";
+    src: url(fonts/Roboto-Light.ttf);
+}
+@font-face {
+    font-family: "extraLightRoboto";
+    src: url(fonts/Roboto-ExtraLight.ttf);
+}
 body{
     margin: 0;
-
+    background-color: #1C1C1C;
 }
 .container {
-    width: 500px;
+    width: 400px;
     margin: 0 auto;
     text-align: center;
 }  
-#input{
+.input{
     background-color: #6943FF;
     color:#FFFFFF;
     margin: 0 auto;
+    font-family: "boldRoboto";
+    font-size: 12px;
+    padding-top: 20px;
 }
-#operation{
+.operation{
     margin: 0 auto;
     background-color: #1F2937;
     border: 1px solid #1F2937;
 }
+/* Chrome, Edge (Chromium), Safari, Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox (vendor-prefixed) */
+  appearance: textfield;      /* Standard (modern browsers) */
+}
+/* no style at all...
+input[type="number"].no-spinner {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+*/
 .input-number{
-    width: 100px;
-    height: 80px;
-    font-size: 48pt;
-    border:#B295FF;
+    background-color: #6943FF;
+    width: 90px;
+    height: 60px;
+    font-size: 18pt;
+    color: #FFFFFF;
+    border: 2px solid #B295FF;
+    border-radius: 3px;
+    font-family: "blackRoboto";
+    font-size: 36pt; ;
+    text-align: center;
 }
 .convert-btn{
+    margin: 20px auto;
     color: #3D3D3D;
+    font-family: "mediumRoboto";
+    background-color: #FFFFFF;
+    padding: 7px 20px;
+    border: None;
+    border-radius: 3px;
 }
-
 h3{
     color: #CCC1FF;
+    font-family: "lightRoboto";
+    font-size: 18;
+    margin: 0px auto;
+    padding: None;
 }
 p{
     color: #FFFFFF;
+    font-family: "extraLightRoboto";
+    font-size: 12;
+    margin: 0px auto;
+    padding: None;
+}
+
+.lengthBox, .volumeBox, .massBox{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.length, .volume, .mass {
+    background-color: 273549;
+    width: 300px;
+    height: auto;
+    margin: 20px auto;;
+    
+    padding: 20px;
 }
