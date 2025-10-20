@@ -43,23 +43,26 @@ body{
     font-family: "boldRoboto";
     font-size: 12px;
     padding-top: 20px;
+    justify-items: center;
+    padding-bottom: 20px;
+    
 }
 .operation{
     margin: 0 auto;
     background-color: #1F2937;
     border: 1px solid #1F2937;
 }
-/* Chrome, Edge (Chromium), Safari, Opera */
+/* Chrome, Edge (Chromium), Safari, Opera 
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-/* Firefox */
+/* Firefox 
 input[type="number"] {
-  -moz-appearance: textfield; /* Firefox (vendor-prefixed) */
-  appearance: textfield;      /* Standard (modern browsers) */
-}
+  -moz-appearance: textfield;   Firefox (vendor-prefixed) 
+  appearance: textfield;       Standard (modern browsers) 
+
 /* no style at all...
 input[type="number"].no-spinner {
   -webkit-appearance: none;
@@ -67,7 +70,7 @@ input[type="number"].no-spinner {
   appearance: none;
 }
 */
-.input-number{
+.input-el{
     background-color: #6943FF;
     width: 90px;
     height: 60px;
@@ -77,16 +80,22 @@ input[type="number"].no-spinner {
     border-radius: 3px;
     font-family: "blackRoboto";
     font-size: 36pt; ;
+    display: block;
+    margin: 20px auto;
     text-align: center;
 }
 .convert-btn{
-    margin: 20px auto;
+    margin:  auto;
     color: #3D3D3D;
     font-family: "mediumRoboto";
     background-color: #FFFFFF;
     padding: 7px 20px;
     border: None;
     border-radius: 3px;
+    display: block;
+}
+h1{
+    margin: 0;
 }
 h3{
     color: #CCC1FF;

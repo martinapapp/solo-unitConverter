@@ -1,18 +1,18 @@
 const convertBtn=document.querySelector(".convert-btn")
-const inputNum=document.getElementById("input-number")
+const inputEl=document.getElementById("input-el")
 
 convertBtn.addEventListener('click', function () {
     length()
 })
 
-function length {
+function length ()
     //get element
     //get string value
     //convert to number
     //check if valid or not
     //calculation
     //display value
-}
+
 
  //mainConvert()
 
@@ -59,5 +59,4 @@ function performCalculation() {
   const resultValue = numberValue * 10;
 
   // 5. Display the Result
-  document.getElementById('result').textContent = 'The result is: ' + resultValue;
-}*/
+  document.getElementById('result').textContent = 'The result is: ' + resultValue;}*/
