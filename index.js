@@ -33,4 +33,42 @@ massBox.textContent = `${inputValue} kilograms = ${kilosToPounds.toFixed(3)} pou
 })
 
 
- 
+//Cleaner way :
+/*
+const inputEl = document.getElementById("input-el");
+const convertBtn = document.getElementById('convert-btn');
+
+// --- Data Structure ---
+const conversionData = [
+    { unit: 'length', boxEl: document.getElementById('length-box'), factor: 3.281, unitA: 'meters', unitB: 'feet' },
+    { unit: 'volume', boxEl: document.getElementById('volume-box'), factor: 0.264, unitA: 'liters', unitB: 'gallons' },
+    { unit: 'mass', boxEl: document.getElementById('mass-box'), factor: 2.204, unitA: 'kilograms', unitB: 'pounds' }
+];
+
+// --- Core Logic ---
+function generateConversionString(inputValue, factor, unitA, unitB) {
+    const resultB = inputValue * factor;
+    const resultA = inputValue / factor;
+    return `${inputValue} ${unitA} = ${resultB.toFixed(3)} ${unitB} | ${inputValue} ${unitB} = ${resultA.toFixed(3)} ${unitA}`;
+}
+
+function runAllConversions() {
+    const inputValue = parseFloat(inputEl.value);
+
+    if (isNaN(inputValue) || inputValue === 0) {
+        conversionData.forEach(item => item.boxEl.textContent = "Please enter a valid, non-zero number.");
+        return;
+    }
+
+    conversionData.forEach(item => {
+        item.boxEl.textContent = generateConversionString(inputValue, item.factor, item.unitA, item.unitB);
+    });
+}
+
+// --- Event Listeners and Initial Run ---
+convertBtn.addEventListener('click', runAllConversions);
+inputEl.addEventListener('input', runAllConversions); // For live conversion
+runAllConversions(); // Run once on load
+
+
+*/
