@@ -27,7 +27,7 @@ volumeBox.textContent = `${inputValue} liters = ${litersToGallons.toFixed(3)} ga
 
 let kilosToPounds = inputValue * kilo_pound;
 let poundsToKilos = inputValue / kilo_pound;
-massBox.textContent = `${inputValue} kilograms = ${kilosToPounds.toFixed(3)} pounds | ${inputValue} pounds = ${poundsToKilos.toFixed(3)} kilograms`;
+massBox.textContent = `${inputValue} kilograms = ${kilosToPounds.toFixed(3)} pounds | ${inputValue} pounds = ${poundsToKilos.toFixed(3)} kilos`;
 }
 
 })

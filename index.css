@@ -32,7 +32,7 @@ body{
     background-color: #1C1C1C;
 }
 .container {
-    width: 400px;
+    width: 500px;
     margin: 0 auto;
     text-align: center;
 }  
@@ -49,6 +49,7 @@ body{
 }
 .operation{
     margin: 0 auto;
+    padding: 15px 15px;
     background-color: #1F2937;
     border: 1px solid #1F2937;
 }
@@ -94,7 +95,7 @@ input[type="number"].no-spinner {
     border-radius: 3px;
     display: block;
 }
-h1{
+h1, .length, .mass, .volume{
     margin: 0;
 }
 h3{
@@ -104,24 +105,23 @@ h3{
     margin: 0px auto;
     padding: None;
 }
-p{
+span{
+    padding-top: 10px;
     color: #FFFFFF;
     font-family: "extraLightRoboto";
-    font-size: 12;
+    font-size: 12px;
     margin: 0px auto;
     padding: None;
 }
 
-.lengthBox, .volumeBox, .massBox{
+.length-box, .volume-box, .mass-box{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 .length, .volume, .mass {
-    background-color: 273549;
-    width: 300px;
+    background-color: #273549;
     height: auto;
     margin: 20px auto;;
-    
     padding: 20px;
 }
